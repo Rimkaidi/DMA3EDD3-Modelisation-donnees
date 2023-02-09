@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix voc: <http://...> .
+@prefix xsd: <http://...> .
+
+<http://www.TD.RDF#Margot> a voc:woman, voc:Teacher ;
+  voc:name : "Margot";
+  xsd:âge : "32"^^xsd : integer ;
+  xsd:pants : "40"^^xsd : integer ;
+  xsd:shoes : "38"^^xsd : integer ;
+  hasmother <http://www.TD.RDF#Simone> ;
+  haschild  <http://www.TD.RDF#Marie>,
+            <http://www.TD.RDF#Simon> ;
+  hasSpouse <http://www.TD.RDF#Arthur> ;
+  hasColleague <http://www.TD.RDF#Alice> .
+<http://www.TD.RDF#Simone> a voc:Woman ;
+  voc:name : "simone" .
+<http://www.TD.RDF#Marie> a voc:Woman ;
+  voc:name : "Marie" .
+<http://www.TD.RDF#Simon> a voc:Man ;
+  voc:name : "Simon" .
+<http://www.TD.RDF#Arthur> a voc:Man ;
+  voc:name : "Arthur" ;
+  haschild <http://www.TD.RDF#Marie>;
+         <http://www.TD.RDF#Simon> .
+<http://www.TD.RDF#Alice> a voc:Woman ;
+  voc:name : "Alice" .
+<http://www.TD.RDF#Pierre> a voc:Man ;
+  voc:name : "Pierre" .
