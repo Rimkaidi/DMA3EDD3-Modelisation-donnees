@@ -1,0 +1,28 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix voc:  <http: www.RDFTD.fr voc#> .
+@prefix xml:  <http: www.w3.org XML 1998 namespace> .
+@prefix xsd:  <http: www.w3.org 2001 XMLSchema#> .
+<http://www.RDFTD.FR#Margot> a voc:woman, voc:Teacher ;
+  voc:name  "Margot" ;
+  xsd:âge "32"^^xsd:integer ;
+  xsd:pants "40"^^xsd:integer ;
+  xsd:shoes "38"^^xsd:integer ;
+  voc:hasmother <http://www.RDFTD.FR#Simone> ;
+  voc:haschild  <http://www.RDFTD.FR#Marie>,
+                <http://www.RDFTD.FR#Simon> ;
+  voc:hasSpouse <http://www.RDFTD.FR#Arthur> ;
+  voc:hasColleague <http://www.RDFTD.FR#Alice> .
+<http://www.RDFTD.FR#Simone> a voc:Woman ;
+  voc:name "simone" .
+<http://www.RDFTD.FR#Marie> a voc:Woman ;
+  voc:name "Marie" .
+<http://www.RDFTD.FR#Simon> a voc:Man ;
+  voc:name "Simon" .
+<http://www.RDFTD.FR#Arthur> a voc:Man ;
+  voc:name "Arthur" ;
+  voc:haschild <http://www.RDFTD.FR#Marie>;
+               <http://www.RDFTD.FR#Simon> .
+<http://www.RDFTD.FR#Alice> a voc:Woman ;
+  voc:name "Alice" .
+<http://www.RDFTD.FR#Pierre> a voc:Man ;
+  voc:name "Pierre" .
