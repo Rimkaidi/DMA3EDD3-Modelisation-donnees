@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://www.RDFTD.fr/voc#">
+
+  <rdf:Description rdf:about="http://www.RDFTD.FR#Margot">
+    <rdf:type rdf:resource="http://www.RDFTD.fr/voc#Woman"/>
+    <rdf:type rdf:resource="http://www.RDFTD.fr/voc#Teacher"/>
+    <ns0:name>Margot</ns0:name>
+    <ns0:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ns0:age>
+    <ns0:pantsSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</ns0:pantsSize>
+    <ns0:shoeSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</ns0:shoeSize>
+    <ns0:hasMother>
+      <ns0:Woman rdf:about="http://www.RDFTD.FR#Simone">
+        <ns0:name>Simone</ns0:name>
+      </ns0:Woman>
+    </ns0:hasMother>
+
+    <ns0:hasChild rdf:resource="http://www.RDFTD.FR#Marie"/>
+    <ns0:hasChild rdf:resource="http://www.RDFTD.FR#Simon"/>
+    <ns0:hasSpouse>
+      <ns0:Man rdf:about="http://www.RDFTD.FR#Arthur">
+        <ns0:name>Arthur</ns0:name>
+        <ns0:hasChild rdf:resource="http://www.RDFTD.FR#Marie"/>
+        <ns0:hasChild rdf:resource="http://www.RDFTD.FR#Simon"/>
+      </ns0:Man>
+    </ns0:hasSpouse>
+
+    <ns0:hasColleague>
+      <ns0:Woman rdf:about="http://www.RDFTD.FR#Alice">
+        <ns0:name>Alice</ns0:name>
+      </ns0:Woman>
+    </ns0:hasColleague>
+
+  </rdf:Description>
+
+  <ns0:Woman rdf:about="http://www.RDFTD.FR#Marie">
+    <ns0:name>Marie</ns0:name>
+  </ns0:Woman>
+
+  <ns0:Man rdf:about="http://www.RDFTD.FR#Simon">
+    <ns0:name>Simon</ns0:name>
+  </ns0:Man>
+
+  <ns0:Man rdf:about="http://www.RDFTD.FR#Pierre">
+    <ns0:name>Pierre</ns0:name>
+  </ns0:Man>
+
+</rdf:RDF>
