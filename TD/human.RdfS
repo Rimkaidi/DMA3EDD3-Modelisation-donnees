@@ -1,0 +1,44 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns="http://www.example.com/animals#">
+
+  <Class rdf:ID="Animal">
+    <label xml:lang="en">animal</label>
+    <comment xml:lang="en">
+      A living organism that feeds on organic matter, typically having specialized sense organs and nervous system and able to respond rapidly to stimuli.
+    </comment>
+  </Class>
+
+  <Class rdf:ID="Mammal">
+    <subClassOf rdf:resource="#Animal"/>
+    <label xml:lang="en">mammal</label>
+    <comment xml:lang="en">
+      A warm-blooded vertebrate animal of a class that is distinguished by the possession of hair or fur, the secretion of milk by females for the nourishment of the young, and (typically) the birth of live young.
+    </comment>
+  </Class>
+
+  <Class rdf:ID="Primate">
+    <subClassOf rdf:resource="#Mammal"/>
+    <label xml:lang="en">primate</label>
+    <comment xml:lang="en">
+      A mammal of an order that includes the lemurs, lorises, tarsiers, monkeys, apes, and humans.
+    </comment>
+  </Class>
+
+  <Class rdf:ID="Human">
+    <subClassOf rdf:resource="#Primate"/>
+    <label xml:lang="en">human</label>
+    <comment xml:lang="en">
+      A bipedal primate mammal that is the only extant species of the genus Homo and is characterized by its large brain size, articulate speech, and ability to create and use complex tools.
+    </comment>
+  </Class>
+
+  <Individual rdf:about="#Bob Gabriel">
+    <rdf:type rdf:resource="#Human"/>
+    <label xml:lang="en">Bob Gabriel</label>
+    <comment xml:lang="en">
+      A fictional character who represents an anonymous person, typically used in legal or medical contexts.
+    </comment>
+  </Individual>
+
+</rdf:RDF>
