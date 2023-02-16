@@ -1,0 +1,39 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="http://www.example.com/people#" xml:base="http://www.example.com/people#">
+
+  <Woman rdf:ID="Margot">
+    <name>Margot</name>
+    <hasChild rdf:resource="#Marie"/>
+    <hasChild rdf:resource="#Simon"/>
+    <hasSpouse rdf:resource="#Arthur"/>
+    <hasColleague rdf:resource="#Alice"/>
+    <hasMother rdf:resource="#Simone"/>
+  </Woman>
+  <Person rdf:ID="alice">
+    <name>Alice</name>
+    <email>alice@example.com</email>
+    <hasFriend rdf:resource="#bob"/>
+  </Person>
+  <Person rdf:ID="charlie">
+    <name>Charlie</name>
+    <email>charlie@example.com</email>
+    <hasFriend rdf:resource="#alice"/>
+  </Person>
+  <Man rdf:ID="Philipe">
+   <rdf:type rdf:resource="http://www.inria.fr/2007/09/11/humans.rdfs#Researcher"/>
+   <shoesize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</shoesize>
+   <trouserssize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</trouserssize>
+   <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</age>
+   <shirtsize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">L</shirtsize>
+   <name>Philipe</name>
+   <hasChild rdf:resource="#Jean"/>
+   <hasChild rdf:resource="#Jimmy"/>
+  </Man>
+  <Person rdf:ID="bob">
+    <name>Bob</name>
+    <email>bob@example.com</email>
+    <hasFriend rdf:resource="#charlie"/>
+  </Person>
+  <Woman rdf:ID="Isabella">
+   <hasMother rdf:resource="#Catherine"/>
+  </Woman>
+</rdf:RDF>
